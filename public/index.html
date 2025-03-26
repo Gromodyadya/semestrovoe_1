@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React Redux To-Do App</title>
+    <style>
+        body[data-theme='dark'] {
+          background-color: #333333; /* Темный фон для body */
+          color: #ffffff;         /* Белый цвет текста по умолчанию для body */
+        }
+        body[data-theme='light'] {
+          background-color: #ffffff; /* Светлый фон для body */
+          color: #000000;         /* Черный цвет текста по умолчанию для body */
+        }
+    
+        /* Добавим стили для общего контейнера App, чтобы он не наследовал фон body, если это необходимо */
+        #root > div { /* Выбираем прямой дочерний div внутри #root (App компонент) */
+          background-color: inherit; /* Наследуем фон от body, или можно задать другой, если нужно */
+        }
+      </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
