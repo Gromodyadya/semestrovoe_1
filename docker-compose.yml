@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  task-manager-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" # Маппинг порта Nginx на хост
+      # Если хочешь использовать режим разработки с hot-reload внутри Docker (сложнее):
+      # - "3000:3000"
+    # volumes: # Для режима разработки
+    #   - ./src:/app/src
+    #   - ./public:/app/public
+    environment:
+      - NODE_ENV=production # или development
+      # Сюда можно передавать переменные окружения из .env файла
+      # - REACT_APP_API_URL=${REACT_APP_API_URL}
+    # command: yarn start # Для режима разработки, если Dockerfile CMD ["npm", "start"]

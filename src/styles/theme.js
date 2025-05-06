@@ -29,6 +29,7 @@ export const themeStyles = {
   light: {
     backgroundColor: '#ffffff',
     color: '#000000',
+    colorMuted: '#666666',
     inputBackgroundColor: '#f0f0f0',
     inputTextColor: '#000000', // Явно задаем цвет текста для инпута в светлой теме
     buttonBackgroundColor: '#4CAF50',
@@ -40,6 +41,7 @@ export const themeStyles = {
   dark: {
     backgroundColor: '#222222', // Сделаем фон темнее, но не совсем черным
     color: '#EEEEEE', // Сделаем текст светло-серым для лучшей читаемости на темном фоне
+    colorMuted: '#AAAAAA',
     inputBackgroundColor: '#333333', // Фон инпута немного светлее общего фона
     inputTextColor: '#ffffff', // Явно задаем белый цвет текста для инпута в темной теме
     buttonBackgroundColor: '#689F38',
