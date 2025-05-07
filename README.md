@@ -40,10 +40,8 @@
 
 ### В режиме разработки (локально)
 
-npm start
-# или
-yarn start
-=======
+npm start или yarn start
+
 4. Запустить приложение:
 
    npm start
